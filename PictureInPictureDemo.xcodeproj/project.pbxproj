@@ -14,6 +14,7 @@
 		F9E4E9A41DD2E43B0061746B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E4E9A21DD2E43B0061746B /* LaunchScreen.storyboard */; };
 		F9E4E9AF1DD2E43B0061746B /* PictureInPictureDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E4E9AE1DD2E43B0061746B /* PictureInPictureDemoTests.swift */; };
 		F9E4E9BA1DD2E43B0061746B /* PictureInPictureDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E4E9B91DD2E43B0061746B /* PictureInPictureDemoUITests.swift */; };
+		F9E4E9CE1DD307B00061746B /* videoplayback.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F9E4E9CD1DD307B00061746B /* videoplayback.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		F9E4E9B51DD2E43B0061746B /* PictureInPictureDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictureInPictureDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E4E9B91DD2E43B0061746B /* PictureInPictureDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureInPictureDemoUITests.swift; sourceTree = "<group>"; };
 		F9E4E9BB1DD2E43B0061746B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9E4E9C71DD2E6240061746B /* PictureInPictureDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PictureInPictureDemo.entitlements; sourceTree = "<group>"; };
+		F9E4E9CD1DD307B00061746B /* videoplayback.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoplayback.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 				F9E4E9AD1DD2E43B0061746B /* PictureInPictureDemoTests */,
 				F9E4E9B81DD2E43B0061746B /* PictureInPictureDemoUITests */,
 				F9E4E9971DD2E43B0061746B /* Products */,
+				F9E4E9C81DD2E6240061746B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +101,8 @@
 		F9E4E9981DD2E43B0061746B /* PictureInPictureDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F9E4E9C71DD2E6240061746B /* PictureInPictureDemo.entitlements */,
+				F9E4E9CD1DD307B00061746B /* videoplayback.mp4 */,
 				F9E4E9991DD2E43B0061746B /* AppDelegate.swift */,
 				F9E4E99B1DD2E43B0061746B /* ViewController.swift */,
 				F9E4E99D1DD2E43B0061746B /* Main.storyboard */,
@@ -123,6 +129,13 @@
 				F9E4E9BB1DD2E43B0061746B /* Info.plist */,
 			);
 			path = PictureInPictureDemoUITests;
+			sourceTree = "<group>";
+		};
+		F9E4E9C81DD2E6240061746B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +208,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 6AC44Z6PNA;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
 					};
 					F9E4E9A91DD2E43B0061746B = {
 						CreatedOnToolsVersion = 8.0;
@@ -237,6 +255,7 @@
 			files = (
 				F9E4E9A41DD2E43B0061746B /* LaunchScreen.storyboard in Resources */,
 				F9E4E9A11DD2E43B0061746B /* Assets.xcassets in Resources */,
+				F9E4E9CE1DD307B00061746B /* videoplayback.mp4 in Resources */,
 				F9E4E99F1DD2E43B0061746B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
